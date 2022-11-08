@@ -55,9 +55,9 @@ abstract class Empleado{
     public function mostrar(){
         $texto = "";
 
-        $texto += "Nombre: $this->nombre <br/>";
-        $texto += "Apellido: $this->apellido <br/>";
-        $texto += "Nº SS.SS.: $this->numeroSeguridadSocial <br/>";
+        $texto .= "Nombre: $this->nombre <br/>";
+        $texto .= "Apellido: $this->apellido <br/>";
+        $texto .= "Nº SS.SS.: $this->numeroSeguridadSocial <br/>";
         
         return $texto;
     }
