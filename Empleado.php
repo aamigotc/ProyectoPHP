@@ -4,7 +4,7 @@ abstract class Empleado{
     private $apellido;
     private $numeroSeguridadSocial;
 
-    public function _construct($nombre, $apellido, $numeroSeguridadSocial){
+    public function __construct($nombre, $apellido, $numeroSeguridadSocial){
         $this->nombre = $nombre;
         $this->apellido = $apellido;
         $this->numeroSeguridadSocial = $numeroSeguridadSocial;
@@ -19,7 +19,7 @@ abstract class Empleado{
 
     /**
      * Set the value of numeroSeguridadSocial
-     */ 
+    */ 
     public function setNumeroSeguridadSocial($numeroSeguridadSocial){
         $this->numeroSeguridadSocial = $numeroSeguridadSocial;
     }
