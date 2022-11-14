@@ -13,13 +13,11 @@
 
     <header>
         <img src='img\logo.png' width="85" height="70" alt="El logo de Mª Ana Sanz" />
-        <h1>Ejemplos de la UT2-Funciones</h1>
+        <h1>Ejemplos de clases abstractas</h1>
     </header>
 
     <nav>
-        <a href="#">Enlace 1</a>
-        <a href="#">Enlace 2</a>
-        <a href="#">Enlace 3</a>
+        <a href="#">#</a>
     </nav>
 
 

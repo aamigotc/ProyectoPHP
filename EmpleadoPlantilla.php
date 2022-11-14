@@ -1,5 +1,5 @@
 <?php
-include_once "Empelado.php";
+include_once "Empleado.php";
 class EmpleadoPlantilla extends Empleado{
     private $sueldo;
     private $dietas;
