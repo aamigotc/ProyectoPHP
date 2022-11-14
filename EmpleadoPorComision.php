@@ -1,5 +1,5 @@
 <?php
-include_once "Empelado.php";
+include_once "Empleado.php";
 class EmpleadoPorComision extends Empleado{
     private $horas;
     private $tarifa;
