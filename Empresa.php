@@ -1,6 +1,6 @@
 <?php
 include_once "Empleado.php";
-class Empresa implements Empleado{
+class Empresa{
     private $empresa = array();
 
     public function addEmpleado($empleado){
@@ -13,10 +13,12 @@ class Empresa implements Empleado{
 
     public function listarEmpleados(){
         $texto = "";
-        if(sizeof($this->empresa) == 0){
+        $ingresos = 0;
+        if(sizeof($this->empresa) != 0){
 
             foreach($this->empresa as $emp){
-                $texto.= "$emp <br/>";
+                $texto.= $emp->mostrar() . "<br/>";
+                $ingresos += $emp->ingresos();
             }
 
         }else{
@@ -24,5 +26,20 @@ class Empresa implements Empleado{
         }
         
         return $texto;
+    }
+
+    public function sumaIngresos(){
+        $ingresos = 0;
+        if(sizeof($this->empresa) != 0){
+
+            foreach($this->empresa as $emp){
+                $ingresos += $emp->ingresos();
+            }
+
+        }else{
+            return "la lista está vacía";
+        }
+        
+        return $ingresos;
     }
 }

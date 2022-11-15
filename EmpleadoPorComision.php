@@ -16,9 +16,6 @@ class EmpleadoPorComision extends Empleado{
 
     public function mostrar(){
         $texto = parent::mostrar();
-        $texto .= "Horas: $this->horas <br/>";
-        $texto .= "Tarifa: $this->tarifa <br/>";
-        $texto .= "Base: $this->base <br/>";
         $texto .= "Ingresos: " . $this->ingresos() ." <br/>";
         return $texto;
     }

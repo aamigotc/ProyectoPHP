@@ -40,8 +40,6 @@ class EmpleadoPlantilla extends Empleado{
 
     public function mostrar(){
         $texto = parent::mostrar();
-        $texto .= "Sueldo: $this->sueldo <br/>";
-        $texto .= "Dietas: $this->dietas <br/>";
         $texto .= "Ingresos: " . $this->ingresos() ." <br/>";
         return $texto;
     }
